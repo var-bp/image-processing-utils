@@ -1,0 +1,22 @@
+{
+  "name": "image-processing-utils",
+  "version": "1.0.0",
+  "description": "Image processing utils",
+  "type": "module",
+  "scripts": {
+    "clean:input": "node empty-directory.js --folder input",
+    "clean:output": "node empty-directory.js --folder output",
+    "jpeg": "node jpeg.js --folder input",
+    "png": "node png.js --folder input",
+    "resize": "node resize.js --folder input",
+    "svgo": "node node_modules/svgo/bin/svgo -f svg",
+    "webp": "node webp.js --folder input"
+  },
+  "dependencies": {
+    "filesize": "8.0.0",
+    "fs-extra": "10.0.0",
+    "minimist": "1.2.5",
+    "sharp": "0.29.0",
+    "svgo": "2.4.0"
+  }
+}
